@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-session-minimal": "^3.0.4",
+    "koa2-cors": "^2.0.6",
+    "mongoose": "^5.3.7",
+    "mz": "^2.7.0"
+  },
+  "name": "transfer",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BingXinJiang/transfer.git"
+  },
+  "author": "jason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BingXinJiang/transfer/issues"
+  },
+  "homepage": "https://github.com/BingXinJiang/transfer#readme"
+}
