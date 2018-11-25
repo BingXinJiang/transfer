@@ -28,7 +28,6 @@ exports.findByPhoneNumber = async ({phoneNumber}) => {
 exports.findAllUsers = async () => {
 	var query = User.find({});
 	let res = await query.exec()
-	console.log('res: ', res)
 	return res
 }
 
@@ -45,18 +44,17 @@ exports.addUser = async (user) => {
 
 /**
  * 删除用户
- * @param  {[type]} options.phoneNumber [description]
+ * @param  {[type]} options.id [description]
  * @return {[type]}                     [description]
  */
-exports.deleteUser = async ({phoneNumber}) => {
+exports.deleteUser = async ({id}) => {
 	var flag = false
-	await User.remove({phoneNumber}, function(err) {
+	await User.remove({id}, function(err) {
 		if(err) {
 			flag = false
 		}else{
 			flag = true
 		}
-		
 	})
 	return flag
 }

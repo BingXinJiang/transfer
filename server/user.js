@@ -15,11 +15,8 @@ module.exports={
 	//返回全部数据
 	getAllUser:()=>{
 		let users = findAllUsers()
-		console.log('users: ', users)
 		return users
 	},
-
-	
 	//性别选择
 	getUserSex:(sex)=>{
 		return userData.filter(function(ele){
